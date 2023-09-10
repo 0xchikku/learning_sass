@@ -1,18 +1,19 @@
-html{
+@use "../utils/" as util;
+html {
   box-sizing: border-box;
   font-size: 100%;
 }
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(220, 91, 237);
-  color: rgb(252, 250, 248);
+  font-family: util.$fonts;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

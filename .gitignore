@@ -1,0 +1,116 @@
+# Ignore system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files and other generated files
+*.log
+*.log.*
+npm-debug.log*
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore build output and deployment directories
+build/
+dist/
+out/
+public/
+
+# Ignore dependencies for various package managers
+package-lock.json
+yarn.lock
+yarn-error.log
+
+# Ignore .env files for dotenv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore coverage output
+coverage/
+
+# Ignore Mac-specific files
+.AppleDouble
+.LSOverride
+
+# Ignore local settings and secrets
+config.js
+config.local.js
+
+# Ignore editor-specific files
+*.swp
+*.swo
+*.swn
+*.swm
+
+# Ignore cache and temporary files
+.cache/
+.tmp/
+.temp/
+
+# Ignore system files and archives
+*.gz
+*.zip
+*.tar
+*.rar
+
+# Ignore IDE and text editor files
+*.sublime-project
+*.sublime-workspace
+*.idea/
+.vscode/
+
+# Ignore generated files for build tools and bundlers
+/build/
+/dist/
+/node_modules/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore compiled Java classes
+*.class
+
+# Ignore logs and generated files for Java
+*.log
+/target/
+
+# Ignore .DS_Store files created by macOS
+.DS_Store
+
+# Ignore log files and generated files for Ruby
+*.log
+*.gem
+
+# Ignore generated files for Rails
+/public/assets
+/public/packs
+/public/packs-test
+/tmp
+/log
+
+# Ignore SQLite database files
+*.sqlite3
+*.sqlite3-journal
+
+# Ignore generated files for PHP
+/public/uploads
+/storage
+/vendor/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore cache and temporary files for Node.js
+.npm
+
+#vscode
+.vscode

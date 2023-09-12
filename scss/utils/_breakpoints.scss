@@ -1,0 +1,40 @@
+//  < 700 - phone
+//  700 - 900 - tablet
+//  900 - 1440 - desktop
+//  1440 - xl
+
+// 1em - 16px
+
+// scss map
+$breakpoints-up: (
+  "medium": 43.75em,
+  // 700 / 16
+  "large": 56.25em,
+  // 900 / 16
+  "xlarge": 90em,
+  // 1440 / 16
+);
+
+// 699.98px, 899.98px, 1439.98px
+$breakpoints-down: (
+  "small": 43.7485em,
+  // 699.98/16
+  "medium": 56.24875em,
+  // 899.98/16
+  "large": 89.99875em,
+  // 1439.98/16
+);
+
+//map-get is to get the key value from the scss map
+// mixin
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
